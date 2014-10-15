@@ -1,0 +1,12 @@
+hsilop is a simple reverse polish notation calculator for the terminal, written in c++.
+
+Known issues:
+-when using multiplication, the * must be either enclosed in quotes or escaped 
+with a backslash, because the terminal replaces * with a list of all matching 
+files in the directory.
+
+-scientific notation using does not currently work for negative exponents. As a
+ workaround, use an input format like:
+'5.1 10 -3 ^ \*' instead of '5.1e-3'
+
+-the -help parameter is not yet implemented
