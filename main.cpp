@@ -71,8 +71,10 @@ bool isNumber(char* input){
 	int numbersCount = 0;
 	int exponentialCount = 0;
 	while (input[i] != 0){
-		if (input[i] == '-' && i != 0){
-			return false;
+		if (input[i] == '-' && (i != 0)){
+			if (input[i-1] != 'e'){
+				return false;
+			}
 		}
 		if (input[i] == '.'){
 			++decimalCount;
